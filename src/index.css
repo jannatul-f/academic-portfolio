@@ -16,6 +16,17 @@ body {
   position: relative;
 }
 
+.sec-space {
+  padding: 4rem 0;
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -54,17 +65,6 @@ h4 {
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.sec-space {
-  padding: 4rem 0;
-}
-.extra-space {
-  padding-top: 8rem;
-}
-.obj-width {
-  max-width: 1200px;
-  margin: auto;
 }
 
 
@@ -140,6 +140,103 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+/* ===============================
+   IMAGE SLIDER
+   =============================== */
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 2.5rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Main image */
+.slider img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Navigation buttons */
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 5;
+  transition: background 0.25s ease;
+}
+
+.slider button:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.slider button:first-of-type {
+  left: 14px;
+}
+
+.slider button:last-of-type {
+  right: 14px;
+}
+
+/* Indicators (dots) */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.slider-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #c4c4c4;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-dots button.active {
+  background: #1b2b85;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 900px) {
+  .slider img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider img {
+    height: 240px;
+  }
+
+  .slider button {
+    font-size: 1.3rem;
+    padding: 6px 10px;
+  }
+}
+
+
+
 
 /* Start Media Query */
 

@@ -1,7 +1,10 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/professor-site
+  repo: fahimulkabir/academic-portfolio   # <-- CHANGE THIS
   branch: main
+
+# backend:
+#   name: test-repo
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
@@ -30,12 +33,7 @@ collections:
       - label: "Position"
         name: "position"
         widget: "select"
-        options:
-          - faculty
-          - postdoc
-          - phd
-          - ms
-          - bachelors
+        options: [faculty, postdoc, phd, ms, bachelors]
 
       - { label: "Start Date", name: "startDate", widget: "string" }
       - { label: "End Date", name: "endDate", widget: "string", required: false }
@@ -45,3 +43,35 @@ collections:
       - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
 
       - { label: "Bio", name: "body", widget: "markdown" }
+
+  - name: "research_overview"
+    label: "Research Overview"
+    files:
+      - file: "src/content/research/overview.md"
+        label: "Lab Overview"
+        name: "overview"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image" }
+          - label: "Content"
+            name: "body"
+            widget: "markdown"
+
+  - name: "research_projects"
+    label: "Research Projects"
+    folder: "src/content/research/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Links"
+        name: "links"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown" }

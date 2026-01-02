@@ -1,11 +1,14 @@
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
+import "../index.css"
 
 export default function MainLayout() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main className="obj-width sec-space">
+        <Outlet />
+      </main>
     </>
   );
 }

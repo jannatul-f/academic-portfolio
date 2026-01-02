@@ -1,5 +1,5 @@
-import ReactMarkdown from "react-markdown";
-import type { Publication } from "../types/publication";
+// import ReactMarkdown from "react-markdown";
+// import type { Publication } from "../types/publication";
 
 // TEMP: later this will come from CMS Markdown
 // const Home: Publication[] = [
