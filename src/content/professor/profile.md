@@ -1,7 +1,7 @@
 ---
 name: Jannatul Ferdous
 image: https://imgcdn.stablediffusionweb.com/2024/9/18/5696c32e-4475-4dbc-9acb-20abc5477b8e.jpg
-googleScholar: https://scholar.google.com/jannatul
+googleScholar: ""
 linkedin: https://linkedin.com/in/jannatul-ferdous-249535269?
 github: https://github.com/jannatul-f
 cv: /uploads/mingon-kang-cv.pdf
