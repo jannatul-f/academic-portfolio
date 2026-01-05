@@ -1,12 +1,12 @@
 ---
-name: "Dr. John Doe"
-image: "/uploads/professor.jpg"
-cv: "/uploads/mingon-kang-cv.pdf"
-googleScholar: "https://scholar.google.com/..."
-orcid: "https://orcid.org/0000-0000-0000-0000"
-linkedin: "https://linkedin.com/in/..."
-github: "https://github.com/..."
-email: "mailto:johndoe@uni.edu"
+name: Jannatul Ferdous
+image: https://imgcdn.stablediffusionweb.com/2024/9/18/5696c32e-4475-4dbc-9acb-20abc5477b8e.jpg
+googleScholar: https://scholar.google.com/jannatul
+linkedin: https://linkedin.com/in/jannatul-ferdous-249535269?
+github: https://github.com/jannatul-f
+cv: /uploads/mingon-kang-cv.pdf
+orcid: ""
+email: ""
 ---
 
 I am an Assistant Professor of Computational Medicine and Computer Science at UCLA. Previously, I received my Ph.D. in Computer Science at MIT, advised by Dina Katabi. Before MIT, I received my B.S. with honors from Peking University.
