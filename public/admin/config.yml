@@ -25,6 +25,13 @@ collections:
             widget: "string"
             hint: "https://yourdomain.edu"
 
+          - {
+              label: "Your First Name",
+              name: "yourFirstName",
+              widget: "string",
+            }
+          - { label: "Your Last Name", name: "yourLastName", widget: "string" }
+
           - label: "Allow Indexing"
             name: "allowIndexing"
             widget: "boolean"
@@ -34,6 +41,7 @@ collections:
             name: "disallowAdmin"
             widget: "boolean"
             default: true
+
   - name: "professor"
     label: "Professor Profile"
     files:
@@ -151,7 +159,10 @@ collections:
     label: "News & Updates"
     folder: "src/content/news"
     create: true
+    identifier_field: title
+    summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Update", name: "body", widget: "markdown" }

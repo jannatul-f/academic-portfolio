@@ -1,5 +1,6 @@
 .site-header {
-  background-color: #1b2b85;
+  /* background-color: #1b2b85; */
+  background-color: #343a40;
   position: fixed;
   top: 0;
   right: 0;
@@ -28,7 +29,8 @@ nav ul {
   list-style: none;
 }
 
-nav a, .dropdown-label {
+nav a,
+.dropdown-label {
   text-decoration: none;
   color: #fff;
   margin-left: 40px;
@@ -72,7 +74,6 @@ nav a, .dropdown-label {
   background-color: #2052af;
 }
 
-
 #w-btn {
   background: #fff;
   color: #1f4a40;
@@ -95,9 +96,8 @@ nav a, .dropdown-label {
   display: none;
 }
 
-
 @media (max-width: 999px) {
-  nav{
+  nav {
     position: fixed;
     top: 80px;
     right: -300px;
@@ -121,7 +121,7 @@ nav a, .dropdown-label {
     right: 0;
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     background-color: transparent;
     box-shadow: none;
     position: static;
@@ -137,7 +137,7 @@ nav a, .dropdown-label {
     min-width: auto;
   }
 
-  .dropdown-menu li:hover{
+  .dropdown-menu li:hover {
     background: none;
   }
 
