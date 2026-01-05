@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generateSitemap.js && node scripts/generateRobots.js",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
